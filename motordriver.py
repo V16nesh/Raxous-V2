@@ -16,7 +16,8 @@ rin2 = Pin(25, Pin.OUT)
 pwml.freq(1000)
 pwmr.freq(1000)
 
-#we are giving duty as 2^10 bit value so it can accept values from 0 to 1023 
+#we are giving duty as 2^10 bit value
+#Right, left, frwrd, bkwrd movement command can be given through movement function 
 def movement(lspeed, rspeed):
     if lspeed < 0:
         lspeed = -lspeed
